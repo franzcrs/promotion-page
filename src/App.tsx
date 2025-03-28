@@ -6,7 +6,7 @@ const content = {
   en: {
     name: "Franz Arthur Chuquirachi Rosales",
     introduction: "I am an engineer and researcher solving societal challenges through technology and design. I hold a Master’s degree in Intelligent Mechanical Systems from Tokyo Metropolitan University and specialize in machine learning, data analysis, and UX-driven product development. Currently, I am developing research tools for muscle fatigue prediction using Tyscript, React and Rust. My greatest strength lies in bridging technology and design. Through my work, I strive to create tools that spark creativity and empower people to pursue their dreams.",
-    contact: "Contact: franz.chuquirachi＠gmail.com",
+    contact: "Contact: franz.chuquirachi@gmail.com",
     links: [
       { name: "CV", url: "https://www.canva.com/design/DAGh51QyaM4/lFuwbo24GznNMr4nPD_L1w/view" },
       { name: "Work History (Japanese)", url: "https://drive.google.com/file/d/1uT8J3RH8Xx1K0Ob7OSGjdP2ooQ4daq-C/view?usp=sharing" },
@@ -18,7 +18,7 @@ const content = {
   ja: {
     name: "チュキラチ　ロサレス　フランツ　アーサー",
     introduction: "私は、テクノロジーとデザインを通じて社会的課題を解決するエンジニア兼研究者です。東京都立大学で知能機械システムの修士号を取得し、機械学習、データ分析、そしてUXを重視したプロダクト開発を専門としています。現在、TypeScript、React、Rustを用いて筋肉疲労予測のための研究ツールを開発しています。私の強みは、テクノロジーとデザインをつなぐことにあります。私の仕事を通じて、創造性を刺激し、人々が自分の夢を追い求める自信を持てるようなツールを生み出すことを目指しています。",
-    contact: "連絡先: franz.chuquirachi＠gmail.com",
+    contact: "連絡先: franz.chuquirachi@gmail.com",
     links: [
       { name: "CV", url: "https://www.canva.com/design/DAGh51QyaM4/lFuwbo24GznNMr4nPD_L1w/view" },
       { name: "職務経歴書", url: "https://drive.google.com/file/d/1uT8J3RH8Xx1K0Ob7OSGjdP2ooQ4daq-C/view?usp=sharing" },
@@ -45,12 +45,12 @@ function App() {
       <div className="absolute -bottom-80 -right-80 w-[60rem] h-[60rem] bg-teal-400 animate-slow-pulse rounded-full blur-3xl" style={{ animationDelay: '-9s' }}></div>
 
       {/* Content */}
-      <div className="relative z-30 min-h-screen flex items-center justify-center pt-[60px] pb-12">
+      <div className="relative z-30 min-h-screen flex items-center justify-center pt-[50px] pb-12">
         <div className="w-full max-w-[85%] md:max-w-[80%] lg:max-w-[1024px]">
           <div className="flex flex-col md:flex-row gap-8">
             {/* Left column */}
             <div className="md:w-1/2 flex flex-col space-y-8">
-              <h1 className="text-4xl md:text-5xl font-bold text-white pt-12">
+              <h1 className={`${lang==='en' ? 'text-4xl':'text-3xl'} md:text-5xl font-bold text-white pt-12`}>
                 {content[lang].name}
               </h1>
               
