@@ -56,7 +56,7 @@ function App() {
               
               {/* Profile picture */}
               <div className="w-full rounded-lg">
-                <img src="./../assets/portrait.jpg" alt="portrait photo" className="contrast-[1.05] brightness-[0.89] grayscale-[0.1] w-[94%] mx-auto rounded-lg border border-blue-900/30 shadow-xl  bg-blue-950"/>
+                <img src="https://i.ibb.co/Z6rkj509/portrait.jpg" alt="portrait photo" className="contrast-[1.05] brightness-[0.89] grayscale-[0.1] w-[94%] mx-auto rounded-lg border border-blue-900/30 shadow-xl  bg-blue-950"/>
               </div>
             </div>
 
