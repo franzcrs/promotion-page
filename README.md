@@ -1,2 +1,2 @@
-# promotion-page
+# Promotion-page
 My self-promotion page

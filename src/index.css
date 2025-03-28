@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slow-pulse {
+  0% {
+    opacity: 0.03;
+  }
+  50% {
+    opacity: 0.07;
+  }
+  100% {
+    opacity: 0.03;
+  }
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.animate-slow-pulse {
+  animation: slow-pulse 6s ease-in-out infinite;
+}
+
+.digital-grid {
+  background-image: 
+    linear-gradient(rgba(6, 23, 53, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 23, 53, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+.digital-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
